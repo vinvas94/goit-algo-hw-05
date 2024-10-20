@@ -25,7 +25,7 @@ def run_test(text, pattern, algorithm):
 
 # Список алгоритмів
 algorithms = {
-    'Boyer-Moore': boyer_moore,  # Не забудьте імплементувати ці функції
+    'Boyer-Moore': boyer_moore,  
     'Knuth-Morris-Pratt': knuth_morris_pratt,
     'Rabin-Karp': rabin_karp
 }
@@ -59,6 +59,5 @@ fig, axs = plt.subplots(1, 2, figsize=(14, 6))
 plot_results(text1, 'Article 1', axs[0])
 plot_results(text2, 'Article 2', axs[1])
 
-# Регулювання макета та відображення графіку
 plt.tight_layout()
 plt.show()
